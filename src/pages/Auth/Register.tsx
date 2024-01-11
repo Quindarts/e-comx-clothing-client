@@ -2,8 +2,8 @@ import Button from "components/UI/Button";
 import Textfield from "components/UI/Textfield";
 import { Link } from "react-router-dom";
 import { REGEX, REGEX_ERROR_MESSAGE, ROUTE } from "utils/constants";
-import Google from "./Google";
-import Facebook from "./Facebook";
+// import Google from "./Google";
+// import Facebook from "./Facebook";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 interface RegisterPropsTypes {
@@ -45,8 +45,8 @@ function Register() {
     <div className="register_page flex flex-col items-center justify-center">
       <h1>Sign up</h1>
       <div className="flex">
-        <Google />
-        <Facebook />
+        {/* <Google />
+        <Facebook /> */}
       </div>
       <div className="text-[1.6rem] my-[1rem]">OR</div>
       <form className="w-full" onSubmit={formik.handleSubmit}>
