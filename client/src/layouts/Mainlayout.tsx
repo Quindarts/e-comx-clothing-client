@@ -1,6 +1,5 @@
 import Footer from "components/Shared/Footer";
 import Header from "components/Shared/Header/Header";
-import React from "react";
 import { Outlet } from "react-router";
 
 function Mainlayout() {

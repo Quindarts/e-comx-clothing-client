@@ -2,8 +2,6 @@ import { Icon } from "@iconify/react";
 import { Snackbar } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { ICON_LIBARY, ROUTE } from "utils/constants";
-import lg from "assets/image/prt1.webp";
-import Button from "./Button";
 import CardOrder from "./CardOrder";
 
 interface ToastPropsType {

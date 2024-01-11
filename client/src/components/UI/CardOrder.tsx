@@ -2,8 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "./Button";
 import lg from "assets/image/prt1.webp";
-import { Icon } from "@iconify/react";
-import { ICON_LIBARY, ROUTE } from "utils/constants";
+import { ROUTE } from "utils/constants";
 import InputQuantity from "./InputQuantity";
 interface CardOrderPropsType {
   type?: "Remove" | "Leave reviews" | "View cart";
@@ -44,7 +43,14 @@ function CardOrder(props: CardOrderPropsType) {
             <span>Quantity:</span>
             <InputQuantity className="mt-[1rem]" size="sm" />
           </div>
-          <Button className="flex items-end" variant="outline" color="primary">
+          <Button
+            onClick={() => {
+              if (type !== "Remove") navigate(ROUTE.CART);
+            }}
+            className="flex items-end"
+            variant="outline"
+            color="primary"
+          >
             {type}
           </Button>
         </div>

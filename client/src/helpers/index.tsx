@@ -11,6 +11,7 @@ export function removeFieldObject(obj: any, fieldName: string) {
   delete obj[fieldName];
   return obj;
 }
+
 export function useControllHandleListObject(listItem: any, setDemo: void) {
   const [list, setlist] = useState(listItem);
 

@@ -1,8 +1,8 @@
 import { Icon } from "@iconify/react";
 import usePopup from "hooks/usePopup";
-import React, { useEffect, useRef, useState } from "react";
 import { ICON_LIBARY } from "utils/constants";
 import Button from "./Button";
+import React from "react";
 interface PopupDesktopPropsType {
     children?: React.ReactNode;
     type: "list" | "icon" | "basic" | string;
