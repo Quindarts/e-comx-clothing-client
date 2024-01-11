@@ -1,6 +1,6 @@
 module.exports = {
     appConfig: {
-        name: "e-comx-clothing",
+        name: "e-commerce-pet",
         apiURL: "",
         serverURL: "",
         clientURL:  process.env.CLIENT_URL,
